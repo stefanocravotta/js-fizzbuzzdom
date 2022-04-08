@@ -16,6 +16,10 @@ const limit = 100;
 
 for(let i = 1; i <= limit; i++){
     const elBox = document.createElement('div')
+
+     /* MILESTONE 2 */
+    elBox.className = 'box'
+    container.append(elBox)
     
 
     /* **MILESTONE 1** */
@@ -23,21 +27,27 @@ for(let i = 1; i <= limit; i++){
     const dividendo3 = 3;
     const dividendo5 = 5;
 
-    if(i % dividendo3 === 0){
-        elBox.append("Fizz")
+    if(i % dividendo3 === 0){  
+        elBox.append("Fizz");
+
+        /* MILESTONE 3 */
+        elBox.classList.add("bgc-light-green");
     }else if(i % dividendo5 === 0){
-        elBox.prepend("Buzz")
+        elBox.prepend("Buzz");
+
+        /* MILESTONE 3 */
+        elBox.classList.add("bgc-orange");
     }else {
         elBox.append(i)
     }
 
     if(i % dividendo3 ===0 && i % dividendo5 === 0 ){
-        elBox.innerHTML = "FizzBuzz"
+        elBox.innerHTML = "FizzBuzz";
+
+        /* MILESTONE 3 */
+        elBox.classList.add("bgc-magenta");
+
     }
-
-        /* MILESTONE 2 */
-
-        elBox.className = 'box'
-        container.append(elBox)
+    console.log(elBox);
 }
 
