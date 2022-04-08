@@ -34,7 +34,10 @@ for(let i = 1; i <= limit; i++){
     if(i % dividendo3 ===0 && i % dividendo5 === 0 ){
         elBox.innerHTML = "FizzBuzz"
     }
-    
-    console.log(elBox);
+
+        /* MILESTONE 2 */
+
+        elBox.className = 'box'
+        container.append(elBox)
 }
 
